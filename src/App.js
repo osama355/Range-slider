@@ -10,8 +10,18 @@ export default function App() {
   return (
     <div className="App">
       <div>
-        <Slider color="secondary" max={200} value={val} onChange={update} />
+        <Slider
+          className="slider"
+          color="secondary"
+          max={200}
+          value={val}
+          onChange={update}
+        />
       </div>
+      <span>
+        {" "}
+        Range {val[0]} to {val[1]}
+      </span>
     </div>
   );
 }
